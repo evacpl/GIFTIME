@@ -98,11 +98,6 @@
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
         body { background-color: #fcf9f7; color: #1b1c1b; }
-        .bento-grid {
-            display: grid;
-            grid-template-columns: repeat(12, 1fr);
-            gap: 24px;
-        }
         .bento-item {
             background: white;
             border-radius: 0.25rem;
@@ -118,41 +113,39 @@
 <body class="font-body-md text-body-md">
 <!-- TopNavBar -->
 <nav class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-sm">
-<div class="flex justify-between items-center px-margin-desktop py-4 max-w-max-width mx-auto">
-<div class="flex items-center gap-2">
-<img alt="Kedai Jam Giftime Logo" class="w-auto h-16" src="https://lh3.googleusercontent.com/aida/ADBb0ug7UH1LA8xK5E2UMKiP2J4nYTY6Pw3f1aDokLM0lKffViqhuWtFYxs16-w8tjCBIm3HdtfMPxOj4MtkPLboBfPQS-MBlWno7yyYww45jQvXI8X5GOGO8Vn7WPathwcQadVqK53eaCbx2f2V9Ptrm5i4GWagr73hN90frh3f2zSSMqdvTteez8I3eOGudAt5Qnp_a-nVGyzoLAJmcL2zqSIgHuoE1YteWfr6RuxnrXi4-n7gnMKrmI_zTzscO8NT8wQA6N29kTjWy-E">
-<div class="font-headline-lg text-headline-lg text-brand-red">Kedai Jam Giftime</div>
+<div class="flex justify-between items-center px-4 md:px-margin-desktop py-4 max-w-max-width mx-auto">
+<div class="flex items-center gap-2 md:gap-4 shrink-0">
+<img alt="Kedai Jam Giftime Logo" class="w-auto h-16 md:h-20" src="https://lh3.googleusercontent.com/aida/ADBb0uhYGqpdRp1AA4AGL6H2x5DaIi3NxdF8hmLtHPVmLIXwi_7SxUhqzPC9F0KlrLaaKG-EsUg9s7yLD0wD8AOJZ4IcQcQ-OguLeJPSPe6qtr4n80vgLjuh3qRjgvNyFcnwEU8iAGxQOIq0JiKuXc8fyV_o7LFKYTajWmiQgx8K2Ym-WRaNnYVngJO93swFKIuuPapwHULSD7ZSVaXghS3g67-KoK2Ls6hU05kWw_7GWyWOjGmbeq4uTnUKHkWJ9Yqt0pNESg920GcfyP8">
+<div class="font-headline-lg text-2xl md:text-3xl lg:text-4xl text-brand-red whitespace-nowrap">Kedai Jam Giftime</div>
 </div>
-<div class="hidden md:flex space-x-8">
+<div class="hidden lg:flex space-x-8">
 <a class="text-secondary font-bold border-b-2 border-secondary font-body-md text-body-md transition-all duration-300" href="#">Home</a>
 <a class="text-on-surface-variant hover:text-secondary font-body-md text-body-md transition-all duration-300" href="#">Watches</a>
 <a class="text-on-surface-variant hover:text-secondary font-body-md text-body-md transition-all duration-300" href="#">Repair Services</a>
 <a class="text-on-surface-variant hover:text-secondary font-body-md text-body-md transition-all duration-300" href="#">Testimonials</a>
 </div>
-<div class="flex items-center space-x-4">
-<a href="https://maps.app.goo.gl/FJ5skzfp9JrnJh738" target="_blank" rel="noopener noreferrer" class="flex items-center"><span class="material-symbols-outlined text-primary cursor-pointer">location_on</span></a>
-<span class="material-symbols-outlined text-primary cursor-pointer">call</span>
-<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-body-md text-body-md hover:bg-secondary transition-colors">Contact Us</button>
+<div class="flex items-center space-x-2 md:space-x-4">
+<a class="flex items-center" href="https://maps.app.goo.gl/FJ5skzfp9JrnJh738" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-primary cursor-pointer">location_on</span></a>
+<a class="flex items-center" href="tel:+60123456789"><span class="material-symbols-outlined text-primary cursor-pointer">call</span></a>
+
 </div>
 </div>
 </nav>
 <!-- Hero Section -->
-<section class="pt-32 pb-20 px-margin-desktop max-w-max-width mx-auto">
+<section class="pb-20 px-4 md:px-margin-desktop max-w-max-width mx-auto pt-24 md:pt-32">
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 <div class="space-y-8">
-<div class="inline-block px-4 py-1 bg-secondary-container text-on-secondary-container rounded-full font-label-caps text-label-caps uppercase">
+<div class="inline-block px-4 py-1 bg-secondary-container text-on-secondary-container rounded-full font-label-caps text-[10px] md:text-label-caps uppercase">
                 📍 Find us inside AEON BiG Puchong Utama!
             </div>
-<h1 class="font-headline-xl text-primary leading-tight whitespace-nowrap text-[32px]">Looking for a Stylish New Watch?<br class="">Battery Replacement<br class="">Watch Strap Replacement<br class="">Watch Repair</h1>
-<p class="text-on-surface-variant text-lg max-w-xl">
-                Welcome to <span class="text-brand-red font-bold text-2xl">Kedai Jam Giftime</span>. Skip the guesswork and try on our curated selection of high-quality, stylish watches in person. Plus, enjoy our expert, on-the-spot battery replacements and premium strap upgrades. Seeing and feeling the quality makes all the difference!
-            </p>
+<h1 class="font-headline-xl text-primary leading-tight text-[24px] md:text-[40px] lg:text-[48px]"><span class="block">Looking for a Stylish New Watch?</span><span class="block">Battery Replacement</span><span class="block whitespace-nowrap">Watch Strap Replacement</span><span class="block">Watch Repair</span></h1>
+<p class="text-on-surface-variant max-w-xl text-base md:text-lg">Welcome to <span class="text-brand-red font-bold whitespace-nowrap">Kedai Jam Giftime</span>! No more guessing—come try on our curated, high-quality, stylish watches in person. Plus, we’ll fix your battery or upgrade your strap on the spot. Seeing and feeling the quality makes all the difference!</p>
 <div class="flex flex-wrap gap-4">
-<a class="bg-primary text-on-primary px-8 py-4 rounded-xl font-body-md font-bold text-body-md flex items-center gap-2 hover:bg-secondary transition-all" href="https://wa.link/d5itz3" rel="noopener noreferrer" target="_blank">
+<a class="bg-primary text-on-primary px-6 md:px-8 py-3 md:py-4 rounded-xl font-body-md font-bold text-sm md:text-body-md flex items-center gap-2 hover:bg-secondary transition-all min-h-[56px]" href="https://wa.link/d5itz3" rel="noopener noreferrer" target="_blank">
 <span class="material-symbols-outlined">chat</span> 👉 Click to WhatsApp Us Directly
                 </a>
 </div>
-<div class="flex items-center gap-4 text-on-surface-variant italic">
+<div class="flex items-center gap-4 text-on-surface-variant italic text-sm md:text-base">
 <span class="material-symbols-outlined text-secondary">verified</span> Fast on-the-spot service to save you time and hassle.
             </div>
 </div>
@@ -163,175 +156,182 @@
 </div>
 </section>
 <!-- Pain Points Section -->
-<section class="py-20 bg-surface-container">
-<div class="px-margin-desktop max-w-max-width mx-auto">
-<h2 class="font-headline-lg text-headline-lg text-primary text-center mb-16">Is your favorite watch sitting dead in a drawer or feeling uncomfortable?</h2>
+<section class="bg-surface-container py-12 md:py-20">
+<div class="px-4 md:px-margin-desktop max-w-max-width mx-auto">
+<h2 class="font-headline-lg text-primary text-center mb-10 md:mb-16 text-[22px] md:text-headline-lg">Is your favorite watch sitting dead in a drawer or feeling uncomfortable?</h2>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 <div class="bento-item p-8 bg-white flex flex-col items-center text-center">
 <div class="w-16 h-16 rounded-full bg-error-container flex items-center justify-center mb-6">
 <span class="material-symbols-outlined text-error text-4xl">battery_error</span>
 </div>
-<h3 class="font-headline-lg text-primary mb-4 text-2xl">Dead Battery</h3>
-<p class="text-on-surface-variant">Your favorite watch has stopped? Don't let it sit idle. We bring it back to life instantly.</p>
+<h3 class="font-headline-lg text-primary mb-4 text-xl md:text-2xl">Dead Battery</h3>
+<p class="text-on-surface-variant text-sm md:text-base">Your favorite watch has stopped? Don't let it sit idle. We bring it back to life instantly.</p>
 </div>
 <div class="bento-item p-8 bg-white flex flex-col items-center text-center border-t-4 border-secondary">
 <div class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center mb-6">
 <span class="material-symbols-outlined text-secondary text-4xl">do_not_disturb_on</span>
 </div>
-<h3 class="font-headline-lg text-primary mb-4 text-2xl">Old Strap Causing Pain</h3>
-<p class="text-on-surface-variant">Aging leather or stiff bands can irritate your skin. Upgrade to something premium.</p>
+<h3 class="font-headline-lg text-primary mb-4 text-xl md:text-2xl">Old Strap Causing Pain</h3>
+<p class="text-on-surface-variant text-sm md:text-base">Aging leather or stiff bands can irritate your skin. Upgrade to something premium.</p>
 </div>
 <div class="bento-item p-8 bg-white flex flex-col items-center text-center">
 <div class="w-16 h-16 rounded-full bg-tertiary-container flex items-center justify-center mb-6">
 <span class="material-symbols-outlined text-on-tertiary text-4xl">straighten</span>
 </div>
-<h3 class="font-headline-lg text-primary mb-4 text-2xl">Unsure About Your Size</h3>
-<p class="text-on-surface-variant">No more guessing. Come visit us to try on and adjust until it fits you perfectly.</p>
+<h3 class="font-headline-lg text-primary mb-4 text-xl md:text-2xl">Unsure About Your Size</h3>
+<p class="text-on-surface-variant text-sm md:text-base">No need to guess your size! Come visit us, try it on, and we’ll adjust it right on the spot until it fits you perfectly.</p>
 </div>
 </div>
 </div>
 </section>
 <!-- Watch Selection Section -->
-<section class="py-24 px-margin-desktop max-w-max-width mx-auto">
-<div class="flex flex-col lg:flex-row gap-16 items-center">
-<div class="lg:w-1/2 order-2 lg:order-1"><div class="grid grid-cols-2 gap-4">
-<img alt="Selection of leather watch straps" class="rounded-xl shadow-lg w-full h-full object-cover aspect-square md:aspect-auto md:h-[400px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQVxYmWg2Dh07UsnL_BaPIZxEwWQoxNySIKupvczlcfnro7ORaXKjTT2Hu6jMPBii5AxvQGEaCcHf7LmhWuR_C_Cg_ev0lgsVvhIJBhPhf99MJylNgxH3Nh1fyPRu4xSOyFNPtiFnu-qz4rvaR2rf6rIHIqkeB5xxx3IM5rD_UP0GHaIGIcyu6iv2QVpOLAK1c0pLH4wCCu3fny7eSfRh9dd6wsv1wdrzhHCOP0-PAR9QkCNE0e4ZWd_lK50afoPPl2NVMWGcsreWS">
-<img alt="Variety of metal and gold watches" class="rounded-xl shadow-lg w-full h-full object-cover aspect-square md:aspect-auto md:h-[400px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDT3M7evHq2ZzWYLWN7-GQBwwRwg8ecLzEzyu4G-FiXwqkPxEgkiMsg-7L1v32g-YHaqeWGp_I_brGxSj-Fl9ShBpEvrYXw0WaI75GKan62AP00Mr5vGemmVq_7_zMgzSNPHzR2jzmQi8FP3XHIeqpJn89dQTMj70KKv2fD7RRuNaJOqgnG3zeYQQJfx6vjl31tH1GTIAAyzytCd1tC_ZOBZF6p5ZaHg4kPhPw16zoSVe9d2rH0ol2e6W4U2igZoPziILo2qJH3WQBr">
-</div></div>
-<div class="lg:w-1/2 order-1 lg:order-2 space-y-6">
+<section class="px-4 md:px-margin-desktop max-w-max-width mx-auto py-16 md:py-24">
+<div class="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
+<div class="w-full lg:w-1/2 order-2 lg:order-1">
+<div class="grid grid-cols-2 gap-4">
+<img alt="Selection of leather watch straps" class="rounded-xl shadow-lg w-full h-48 md:h-[400px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6r8a017F5nteMlnOMiXOyBrd4TjQhWC5XwK6xJMLdaxdauKq-_Qe_tsTI7fzqCJkwrdvNCWeagi0JEDUYlSbkYVuEMD_LIGKkWkYaiPlIr61X-puhhNX14r2ltlvb5VEWM824BnjKzZWsCZCRQMmYbynMEtj_stWPHh1ot3LaXrjv3x8lAnLPM1hhbDMVFjotmRPs9dQ03AYq6TgghSCjy1BMRmZqIcyll0ckyDXt8-Ab25Yh4ddKVVfKOVBgvR69dN_TeE4X2ser">
+<img alt="Variety of watches" class="rounded-xl shadow-lg w-full h-48 md:h-[400px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuIcj5oMs39-DAkQ7hICOQiHNnvJfMOz7Z10Hbz3Ws5ArH9ch-Y4NCQFAaXxJr6OkMtMIqERrnA_JIibwMsOBT-SRjxeCCdG4QndPrMvSieSSIAaxC7o1APYYb2gszGkhqIpgivJN8MBt2Y0s8P9Df84Sx-lMxb2UenS8017neXQOGi11GLhsbaIp1MWERUeggJSx1eGz5kXN7l_FNj1Odk1td4p_oe2VW5YaHK-oeXbPWygAV4oRc5V1ZVx2snJag-PGe_Jbq1y2Q">
+</div>
+</div>
+<div class="w-full lg:w-1/2 order-1 lg:order-2 space-y-6">
 <div class="text-secondary font-label-caps text-label-caps uppercase tracking-widest">Curated Watch Collection</div>
-<h2 class="font-headline-lg text-headline-lg text-primary leading-tight">✨ The Best Shopping Experience: Try It On &amp; Feel the Quality</h2>
+<h2 class="font-headline-lg text-primary leading-tight text-[24px] md:text-headline-lg">✨ The Best Shopping Experience: Try It On &amp; Feel the Quality</h2>
 <div class="space-y-4">
 <div class="flex gap-4 items-start">
 <div class="mt-1 bg-primary p-1 rounded-sm"><span class="material-symbols-outlined text-on-primary text-sm">check</span></div>
-<p class="text-on-surface-variant"><strong class="text-primary">Try Before You Buy:</strong> Zero guesswork, find the perfect match for your style.</p>
+<p class="text-on-surface-variant text-sm md:text-base"><strong class="text-primary">Try Before You Buy:</strong> Zero guesswork, find the perfect match for your style.</p>
 </div>
 <div class="flex gap-4 items-start">
 <div class="mt-1 bg-primary p-1 rounded-sm"><span class="material-symbols-outlined text-on-primary text-sm">check</span></div>
-<p class="text-on-surface-variant"><strong class="text-primary">Friendly, Honest Advice:</strong> We don't just sell; we recommend what actually fits you.</p>
+<p class="text-on-surface-variant text-sm md:text-base"><strong class="text-primary">Friendly, Honest Advice:</strong> We don't just sell; we recommend what actually fits you.</p>
 </div>
 <div class="flex gap-4 items-start">
 <div class="mt-1 bg-primary p-1 rounded-sm"><span class="material-symbols-outlined text-on-primary text-sm">check</span></div>
-<p class="text-on-surface-variant"><strong class="text-primary">Free On-Site Adjustment:</strong> Buy and wear immediately with our instant fitting service.</p>
+<p class="text-on-surface-variant text-sm md:text-base"><strong class="text-primary">Free On-Site Adjustment:</strong> Buy and wear immediately with our instant fitting service.</p>
 </div>
 </div>
 </div>
 </div>
 </section>
 <!-- Repair Services Section -->
-<section class="py-24 bg-primary text-on-primary">
-<div class="px-margin-desktop max-w-max-width mx-auto">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<section class="bg-primary text-on-primary py-16 md:py-24">
+<div class="px-4 md:px-margin-desktop max-w-max-width mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 <div class="space-y-8">
 <div class="text-on-primary-container font-label-caps text-label-caps uppercase tracking-widest">Professional Services</div>
-<h2 class="font-headline-lg text-headline-lg leading-tight">🛠️ Bring Your Favorite Watch Back to Life: On-the-Spot Service</h2>
+<h2 class="font-headline-lg leading-tight text-[24px] md:text-headline-lg">🛠️ Bring Your Favorite Watch Back to Life: On-the-Spot Service</h2>
 <p class="text-on-primary-container text-lg">
                     Don't let your memories fade in a drawer. In just a few minutes, we can handle it on-site:
                 </p>
 <ul class="space-y-6">
-<li class="flex items-center gap-4 bg-primary-container/50 p-4 rounded-lg">
-<span class="material-symbols-outlined text-secondary-container text-3xl">battery_charging_full</span>
+<li class="flex items-center gap-4 bg-primary-container/50 p-4 md:p-6 rounded-lg">
+<span class="material-symbols-outlined text-secondary-container text-3xl md:text-4xl">battery_charging_full</span>
 <div>
-<h4 class="font-bold">Fast Battery Replacement</h4>
-<p class="text-sm text-on-primary-container opacity-80">Using high-quality batteries for long-lasting power, ready while you wait.</p>
+<h4 class="font-bold text-base md:text-lg">Fast Battery Replacement</h4>
+<p class="text-xs md:text-sm text-on-primary-container opacity-80">Using high-quality batteries for long-lasting power, ready while you wait.</p>
 </div>
 </li>
-<li class="flex items-center gap-4 bg-primary-container/50 p-4 rounded-lg">
-<span class="material-symbols-outlined text-secondary-container text-3xl">watch_off</span>
+<li class="flex items-center gap-4 bg-primary-container/50 p-4 md:p-6 rounded-lg">
+<span class="material-symbols-outlined text-secondary-container text-3xl md:text-4xl">watch_off</span>
 <div>
-<h4 class="font-bold">Comfortable New Strap Upgrade</h4>
-<p class="text-sm text-on-primary-container opacity-80">A wide range of materials that are breathable, durable, and comfortable.</p>
+<h4 class="font-bold text-base md:text-lg">Comfortable New Strap Upgrade</h4>
+<p class="text-xs md:text-sm text-on-primary-container opacity-80">A wide range of materials that are breathable, durable, and comfortable.</p>
 </div>
 </li>
 </ul>
 </div>
 <div class="relative">
-<img alt="Professional horologist repairing a watch with precision tools" class="rounded-xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaYc-YLNxlqDw2NcACoDisuttEOx6oDRjk2dgH07Rgy9edqMmGcjHxV_7uyBZlefUuRBc4r6ljHvtxmun77xLRroRlr46HBwXSazUoDaH5DT31LNObLHKv3rd2A0OwkJ_n72GrYApShl7yD3XQknDmJu5ixeIS3uoDf0p72wlbZcHGPRKi5cskBAaYSDJWYXulZJILa5m_EBLWPtSSBgfnuTw3qhETUYR0lf5xj2-EZvCA1BYslrvODH_B2Sj3hg3ErqWwhN4WdLV0">
-<div class="absolute -bottom-6 -left-6 bg-secondary text-on-secondary p-6 rounded-lg shadow-xl">
-<div class="font-headline-lg">15+</div>
-<div class="font-label-caps text-xs">YEARS OF EXPERTISE</div>
+<img alt="Professional horologist repairing a watch" class="rounded-xl shadow-2xl transition-all duration-500 w-full object-cover aspect-video md:aspect-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaYc-YLNxlqDw2NcACoDisuttEOx6oDRjk2dgH07Rgy9edqMmGcjHxV_7uyBZlefUuRBc4r6ljHvtxmun77xLRroRlr46HBwXSazUoDaH5DT31LNObLHKv3rd2A0OwkJ_n72GrYApShl7yD3XQknDmJu5ixeIS3uoDf0p72wlbZcHGPRKi5cskBAaYSDJWYXulZJILa5m_EBLWPtSSBgfnuTw3qhETUYR0lf5xj2-EZvCA1BYslrvODH_B2Sj3hg3ErqWwhN4WdLV0">
+<div class="absolute -bottom-4 md:-bottom-6 -left-4 md:-left-6 bg-secondary text-on-secondary p-4 md:p-6 rounded-lg shadow-xl">
+<div class="font-headline-lg text-2xl md:text-3xl">15+</div>
+<div class="font-label-caps text-[10px] md:text-xs">YEARS OF EXPERTISE</div>
 </div>
 </div>
 </div>
 </div>
 </section>
 <!-- Testimonials Section -->
-<section class="py-24 px-margin-desktop max-w-max-width mx-auto">
-<div class="text-center mb-16">
-<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Why Choose Us?</h2>
-<p class="text-on-surface-variant font-label-caps">(From One Neighbor to Another)</p>
+<section class="px-4 md:px-margin-desktop max-w-max-width mx-auto py-16 md:py-24">
+<div class="text-center mb-12 md:mb-16">
+<h2 class="font-headline-lg text-primary mb-4 text-[24px] md:text-headline-lg">Why Choose Us?</h2>
+<p class="text-on-surface-variant font-label-caps text-sm">(From One Neighbor to Another)</p>
 <div class="w-24 h-1 bg-secondary mx-auto mt-4"></div>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-<div class="flex flex-col gap-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start">
+<div class="flex flex-col gap-6 md:gap-8">
 <div class="bento-item overflow-hidden shadow-xl rounded-xl">
-<img alt="Google Review from Melur Hafidz" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4XKUF_q7347DSFAvtxp3ZL7DDBsZGysZMkGXioUe0Pi4IzddnjB7OSQRpOHatKlbTyJIqj3gG7h6m0GHTxhG_9_tybaSSyLqTd1cV8FpKj9bZ26wzHpytiHrO8q3gj93oY5FfvT0wnJEr5P8X04AMylpWCJEDi5P95BjfZL0cxEdeA0yqoLUtivP28zYIidxcsaBtjwgHPAqPSMX3OXW8MDW_3p63xeHIhQrDhb3JtGlg8hU1-ztJrAFyoCBKYSLDX20lvQjIOuya">
+<img alt="Google Review" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4XKUF_q7347DSFAvtxp3ZL7DDBsZGysZMkGXioUe0Pi4IzddnjB7OSQRpOHatKlbTyJIqj3gG7h6m0GHTxhG_9_tybaSSyLqTd1cV8FpKj9bZ26wzHpytiHrO8q3gj93oY5FfvT0wnJEr5P8X04AMylpWCJEDi5P95BjfZL0cxEdeA0yqoLUtivP28zYIidxcsaBtjwgHPAqPSMX3OXW8MDW_3p63xeHIhQrDhb3JtGlg8hU1-ztJrAFyoCBKYSLDX20lvQjIOuya">
 </div>
 <div class="grid grid-cols-2 gap-4">
-<div class="p-6 bg-white rounded shadow-sm flex flex-col items-center text-center">
+<div class="p-4 md:p-6 flex flex-col items-center text-center">
 <span class="material-symbols-outlined text-secondary mb-2">visibility</span>
-<span class="font-bold">See It, Touch It, Live It</span>
+<span class="font-bold text-sm md:text-base">See It, Touch It, Live It</span>
 </div>
-<div class="p-6 bg-white rounded shadow-sm flex flex-col items-center text-center">
+<div class="p-4 md:p-6 flex flex-col items-center text-center">
 <span class="material-symbols-outlined text-secondary mb-2">near_me</span>
-<span class="font-bold">Super Convenient Location</span>
+<span class="font-bold text-sm md:text-base">Super Convenient Location</span>
 </div>
 </div>
 </div>
 <div class="space-y-8">
 <div class="bento-item overflow-hidden shadow-xl rounded-xl h-full">
-<img alt="Google Review from Adriana Hasnan" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAW3E2zaUdQla1rdlzvkyOfzprt9zngsiK2i_pn08QNXAuZuGp469CEP9il8ntdJJ9dsiF3RZx0JB_ZGlHW8PB6FATlpZFslK9-WnRujOx9_E-xjVESXzlTLqnG9yYGvVQv9nUT-QZK-RW3CwnpnNJalpZsPwZfHp4s2n572D58jBuMMrZ3jpK3VQ1UIhyuNJbuRptBwJjZMx7OVjNla9wQqbCjPAh8JDeSPpD3VWAjB56PB_MMyvExKjjH3gn-ObxG025y9i_8tvTb">
+<img alt="Google Review" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAW3E2zaUdQla1rdlzvkyOfzprt9zngsiK2i_pn08QNXAuZuGp469CEP9il8ntdJJ9dsiF3RZx0JB_ZGlHW8PB6FATlpZFslK9-WnRujOx9_E-xjVESXzlTLqnG9yYGvVQv9nUT-QZK-RW3CwnpnNJalpZsPwZfHp4s2n572D58jBuMMrZ3jpK3VQ1UIhyuNJbuRptBwJjZMx7OVjNla9wQqbCjPAh8JDeSPpD3VWAjB56PB_MMyvExKjjH3gn-ObxG025y9i_8tvTb">
 </div>
 </div>
 </div>
 </section>
 <!-- Storefront Widget -->
-<div class="px-margin-desktop max-w-max-width mx-auto mb-20">
-<div class="bg-primary-container text-on-primary-container p-8 rounded-xl flex flex-col md:flex-row justify-between items-center gap-8 shadow-xl">
-<div class="flex items-center gap-4">
-<div class="w-12 h-12 bg-on-primary-container/20 rounded-full flex items-center justify-center animate-pulse">
-<div class="w-4 h-4 bg-green-400 rounded-full"></div>
+<div class="px-4 md:px-margin-desktop max-w-max-width mx-auto mb-20">
+<div class="bg-primary-container text-on-primary-container p-6 md:p-8 rounded-xl flex flex-col md:flex-row justify-between items-center gap-6 md:gap-8 shadow-xl">
+<div class="flex items-center gap-4 w-full md:w-auto">
+<div class="w-10 h-10 md:w-12 md:h-12 bg-on-primary-container/20 rounded-full flex items-center justify-center animate-pulse flex-shrink-0">
+<div class="w-3 h-3 md:w-4 md:h-4 bg-green-400 rounded-full"></div>
 </div>
 <div>
-<h3 class="font-headline-lg text-white">We're Open Now</h3>
-<p class="opacity-80">Lot 16, Aeon Big, Persiaran Puchong Utama, Taman Puchong Utama, 47100 Puchong, Selangor</p>
+<h3 class="font-headline-lg text-white text-lg md:text-xl">We're Open Now</h3>
+<p class="text-xs md:text-sm opacity-80">Lot 16, Aeon Big, Persiaran Puchong Utama, Taman Puchong Utama, 47100 Puchong, Selangor</p>
 </div>
 </div>
-<a class="bg-secondary text-on-secondary px-8 py-3 rounded-lg font-bold flex items-center gap-2 hover:bg-secondary/90 transition-all" href="https://maps.app.goo.gl/FJ5skzfp9JrnJh738" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined">map</span> Get Directions to Kedai Jam Giftime</a>
+<a class="bg-secondary text-on-secondary px-6 md:px-8 py-3 rounded-lg font-bold text-sm md:text-base flex items-center justify-center gap-2 hover:bg-secondary/90 transition-all min-h-[52px] w-full md:w-auto" href="https://maps.app.goo.gl/FJ5skzfp9JrnJh738" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined">map</span> Get Directions to Kedai Jam Giftime</a>
 </div>
 </div>
 <!-- Final CTA Section -->
-<section class="py-24 bg-surface-container-highest">
-<div class="px-margin-desktop max-w-max-width mx-auto text-center space-y-8">
-<h2 class="font-headline-xl text-headline-xl text-primary max-w-3xl mx-auto leading-tight">
+<section class="bg-surface-container-highest py-16 md:py-24">
+<div class="px-4 md:px-margin-desktop max-w-max-width mx-auto text-center space-y-8">
+<h2 class="font-headline-xl text-primary max-w-3xl mx-auto leading-tight text-[26px] md:text-[36px] lg:text-headline-xl">
             Give your wrist the comfort it deserves and check out our new arrivals today!
         </h2>
-<p class="text-xl text-on-surface-variant">Don't settle for an uncomfortable strap. Whether you need a repair or a new look, we are here for you.</p>
-<div class="flex flex-col md:flex-row justify-center gap-6 pt-4">
-<a class="bg-primary text-on-primary px-10 py-5 rounded-xl font-bold text-lg hover:scale-105 transition-transform flex items-center justify-center gap-2" href="https://wa.link/d5itz3" rel="noopener noreferrer" target="_blank">
-<span class="material-symbols-outlined">chat_bubble</span> 💬 WhatsApp Us (Free Consultation)
-            </a>
-<a class="bg-white border-2 border-primary text-primary px-10 py-5 rounded-xl font-bold text-lg hover:bg-primary hover:text-on-primary transition-all flex items-center justify-center gap-2" href="https://maps.app.goo.gl/FJ5skzfp9JrnJh738" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined">location_on</span> 📍 Get Directions to Kedai Jam Giftime</a>
-</div>
+<p class="text-base md:text-xl text-on-surface-variant">Don't settle for an uncomfortable strap. Whether you need a repair or a new look, we are here for you.</p>
+
 </div>
 </section>
 <!-- Footer -->
-<footer class="bg-primary text-on-primary py-12">
-<div class="px-margin-desktop max-w-max-width mx-auto">
+<footer class="bg-primary text-on-primary py-12 md:py-16">
+<div class="px-4 md:px-margin-desktop max-w-max-width mx-auto">
 <div class="flex flex-col md:flex-row justify-between items-center w-full gap-8">
-<div class="flex items-center gap-2">
-<img alt="Kedai Jam Giftime Logo" class="w-auto h-24" src="https://lh3.googleusercontent.com/aida/ADBb0ug7UH1LA8xK5E2UMKiP2J4nYTY6Pw3f1aDokLM0lKffViqhuWtFYxs16-w8tjCBIm3HdtfMPxOj4MtkPLboBfPQS-MBlWno7yyYww45jQvXI8X5GOGO8Vn7WPathwcQadVqK53eaCbx2f2V9Ptrm5i4GWagr73hN90frh3f2zSSMqdvTteez8I3eOGudAt5Qnp_a-nVGyzoLAJmcL2zqSIgHuoE1YteWfr6RuxnrXi4-n7gnMKrmI_zTzscO8NT8wQA6N29kTjWy-E">
-<div class="font-headline-lg text-headline-lg text-brand-red">Kedai Jam Giftime</div>
-</div>
-<div class="flex flex-wrap justify-center gap-8 text-primary-fixed-dim">
-<a class="hover:text-secondary-fixed-dim transition-colors font-body-sm text-body-sm" href="#">Privacy Policy</a>
-<a class="hover:text-secondary-fixed-dim transition-colors font-body-sm text-body-sm" href="#">Terms of Service</a>
-<a class="hover:text-secondary-fixed-dim transition-colors font-body-sm text-body-sm" href="#">Visit Us at AEON BiG</a>
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="flex items-center gap-2 md:gap-4">
+<img alt="Kedai Jam Giftime Logo" class="w-auto h-20 md:h-24" src="https://lh3.googleusercontent.com/aida/ADBb0uhYGqpdRp1AA4AGL6H2x5DaIi3NxdF8hmLtHPVmLIXwi_7SxUhqzPC9F0KlrLaaKG-EsUg9s7yLD0wD8AOJZ4IcQcQ-OguLeJPSPe6qtr4n80vgLjuh3qRjgvNyFcnwEU8iAGxQOIq0JiKuXc8fyV_o7LFKYTajWmiQgx8K2Ym-WRaNnYVngJO93swFKIuuPapwHULSD7ZSVaXghS3g67-KoK2Ls6hU05kWw_7GWyWOjGmbeq4uTnUKHkWJ9Yqt0pNESg920GcfyP8">
+<div class="font-headline-lg text-2xl md:text-4xl text-brand-red whitespace-nowrap">Kedai Jam Giftime</div>
 </div>
 </div>
-<div class="mt-12 pt-8 border-t border-on-primary/10 text-center text-primary-fixed-dim font-body-sm text-body-sm">© 2024 <span class="text-brand-red font-bold">Kedai Jam Giftime</span> Lot 16, Aeon Big, Persiaran Puchong Utama, Taman Puchong Utama, 47100 Puchong, Selangor. All rights reserved.</div>
+<div class="flex flex-wrap justify-center md:justify-end gap-6 md:gap-8 text-primary-fixed-dim">
+<a class="hover:text-secondary-fixed-dim transition-colors text-xs md:text-body-sm" href="#">Privacy Policy</a>
+<a class="hover:text-secondary-fixed-dim transition-colors text-xs md:text-body-sm" href="#">Terms of Service</a>
+<a class="hover:text-secondary-fixed-dim transition-colors text-xs md:text-body-sm" href="https://maps.app.goo.gl/FJ5skzfp9JrnJh738" rel="noopener noreferrer" target="_blank">Visit Us at AEON BiG</a>
+</div>
+</div>
+<div class="mt-12 pt-8 border-t border-on-primary/10 text-center text-primary-fixed-dim text-[10px] md:text-body-sm">
+        © 2024 <span class="text-brand-red font-bold">Kedai Jam Giftime</span>. Lot 16, Aeon Big, Persiaran Puchong Utama, Taman Puchong Utama, 47100 Puchong, Selangor. All rights reserved.
+    </div>
 </div>
 </footer>
+
+
+
+
+
+
 
 
 </body></html>
